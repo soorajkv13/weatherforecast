@@ -101,6 +101,11 @@
                 color: white;
                 transform: rotateX(-20deg);
             }
+            thead{
+                background: #397eda;
+                color: white;
+
+            }
         </style>
     </head>
     <body>
