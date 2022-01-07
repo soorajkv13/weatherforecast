@@ -85,6 +85,7 @@ new Vue({
 
       callOpenApi(){
         this.weatherData=[]
+        this.charthescription=''
         var chart = document.getElementById('chart');
         var div = document.getElementById('weather-chart');
         div.remove();
@@ -204,10 +205,18 @@ new Vue({
         data,
          
         options: {
-            interaction: {
-                intersect: false,
-                mode: 'index',
-            },
+            // scales: {
+            // xAxes: [{
+            //     gridLines: {
+            //     drawOnChartArea: false
+            //     }
+            // }]
+            // }
+            // interaction: {
+            //     intersect: false,
+            //     mode: 'index',
+            // },
+            
         // plugins: {
         //     tooltip: {
         //         callbacks: {

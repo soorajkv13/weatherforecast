@@ -85,6 +85,22 @@
             padding: 2px;
             font-size: 14px;
             }
+            button
+            {
+                background-color: #0000;
+                width: 70px;
+                height: 28px;
+                font-size: 12px;
+                border-radius: 12px;
+                border:2px solid #470303d1;
+                font-family: "montserrat",sans-serif;
+                font-weight: bold;
+            }
+            button:hover{
+                background-color: green;
+                color: white;
+                transform: rotateX(-20deg);
+            }
         </style>
     </head>
     <body>
