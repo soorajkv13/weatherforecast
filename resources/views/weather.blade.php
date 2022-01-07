@@ -84,7 +84,7 @@ new Vue({
   methods:{
 
       callOpenApi(){
-        
+        this.weatherData=[]
         var chart = document.getElementById('chart');
         var div = document.getElementById('weather-chart');
         div.remove();
@@ -177,7 +177,7 @@ new Vue({
         var data = {
         labels: label_duration,
         datasets: [{
-            label: 'Temperature(F)',
+            label: 'Temperature(°F)',
             // backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
             data: label_temperature,

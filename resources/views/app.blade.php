@@ -82,7 +82,8 @@
            table, th, td {
             border: 1px solid grey;
             border-collapse: collapse;
-            padding: 3px;
+            padding: 2px;
+            font-size: 14px;
             }
         </style>
     </head>
