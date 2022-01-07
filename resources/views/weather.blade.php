@@ -33,7 +33,7 @@
     
     <table>
         <thead>
-            <th>Date</th>
+            <th>Time</th>
             <th>Duration</th>
             <th>Temperature</th>
             <th>Weather</th>
@@ -46,7 +46,7 @@
             <tr v-for="row in weatherData">
                 <td>@{{ row.date }}</td>
                 <td>@{{ row.name }}</td>
-                <td>@{{ row.temperature }}</td>
+                <td>@{{ row.temperature }}°F</td>
                 <td><img :src="`${row.weather}`" alt="Weather" style="width: 53%;" /></td>
                 <td>@{{ row.wind }}</td>
                 <td>@{{ row.windDirection }}</td>
@@ -131,7 +131,7 @@ new Vue({
         
         this.weatherData = [];
         for(var i = 0 ; i<charthata.length; i++){
-            let dt = new Date(charthata[i].endTime);
+            let dt = new Date(charthata[i].startTime);
             dt = dt.toLocaleString('en-US', { timeZone: 'America/New_York' })
 
             if(i==0){
